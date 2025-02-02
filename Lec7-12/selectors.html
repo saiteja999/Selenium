@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice - Extended</title>
+  <style>
+    /* ID Selector: Styles the element with id="main" */
+    #main {
+      border: 2px solid red;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Class Selector: Styles any element with class="highlight" */
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+
+    /* Compound Class Selector (AND concept):
+       This selector targets elements that have both the "box" AND "rounded" classes. */
+    .box.rounded {
+      border: 2px dashed green;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* Comma Selector (OR concept):
+       This selector applies the same style to h1 OR h2 elements. */
+    h1, h2 {
+      color: purple;
+      text-align: center;
+    }
+
+    /* Descendant Selector: Styles any <p> inside the element with id="main" */
+    #main p {
+      color: blue;
+    }
+
+    /* Adjacent Sibling Selector:
+       Selects any <p> that immediately follows a <div> */
+    div + p {
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    /* General Sibling Selector:
+       Selects any <p> that is preceded by a <div> (not necessarily immediately) */
+    div ~ p {
+      font-weight: bold;
+    }
+
+    /* Child Selector:
+       Selects any <p> that is a direct child of any <div> */
+    div > p {
+      text-decoration: underline;
+    }
+
+    /* Attribute Selector with multiple attribute conditions (AND concept):
+       This selector targets any element that has both data-active="true" AND data-user="admin". */
+    [data-active="true"][data-user="admin"] {
+      background-color: lightgray;
+      padding: 5px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors Practice</h1>
+  <h2>Extended Demonstration</h2>
+
+  <!-- Main container with an id -->
+  <div id="main">
+    <h2>Main Div (id="main")</h2>
+    <!-- This paragraph is both a descendant and a direct child of #main -->
+    <p>This paragraph is a direct child of the main div.</p>
+    
+    <!-- Paragraph with a class -->
+    <p class="highlight">This paragraph is highlighted with a class.</p>
+    
+    <!-- A nested div inside #main -->
+    <div>
+      <!-- This paragraph is a direct child of the nested div -->
+      <p>This paragraph is inside a nested div.</p>
+    </div>
+    
+    <!-- Another nested div -->
+    <div>
+      <h3>Nested Div without direct paragraph</h3>
+    </div>
+    
+    <!-- This paragraph comes after the nested divs -->
+    <p>This paragraph follows the nested divs inside #main.</p>
+  </div>
+
+  <!-- A standalone div outside of #main -->
+  <div>
+    <h2>Standalone Div</h2>
+  </div>
+  <!-- Adjacent sibling selector (div + p) applies here -->
+  <p>This paragraph immediately follows the standalone div.</p>
+  
+  <!-- General sibling selector (div ~ p) applies here -->
+  <p>This paragraph is a general sibling of a div.</p>
+
+  <!-- Another div to show the child selector -->
+  <div>
+    <!-- This <p> is a direct child of the div -->
+    <p>This paragraph is a direct child of this div.</p>
+    <span>This span is inside the same div but not targeted by the child selector.</span>
+  </div>
+
+  <!-- Compound Class Selector demonstration -->
+  <div class="box">
+    <p>This div has class "box" only.</p>
+  </div>
+  <div class="box rounded">
+    <p>This div has both "box" and "rounded" classes (AND condition) and should have a dashed green border.</p>
+  </div>
+
+  <!-- Attribute Selector with multiple conditions (AND demonstration) -->
+  <div data-active="true" data-user="admin">
+    <p>This div meets both attribute conditions: data-active="true" AND data-user="admin".</p>
+  </div>
+</body>
+</html>
