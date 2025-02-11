@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .main {
+            color: blue;
+        }
+        .secondary {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Practice</h1>
+
+    <!-- Input Fields -->
+    <input id="input1" type="text" value="blue" placeholder="Input Blue">
+    <input id="input2" type="text" value="green" placeholder="Input Green">
+    <textarea id="textarea1" placeholder="Text Area"></textarea>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <!-- Paragraphs -->
+    <p id="para1" class="main">This is Paragraph 1</p>
+    <p id="para2" class="secondary">This is Paragraph 2</p>
+    <p class="main">This is Paragraph 3</p>
+
+    <!-- Images -->
+    <img id="img1" src="image1.png" alt="Image 1">
+    <img id="img2" src="image2.png" alt="Image 2">
+
+    <!-- Links -->
+    <a href="https://example.com" id="link1">Example Link</a>
+    <a href="https://test.com" id="link2">Test Link</a>
+
+    <!-- Child Elements -->
+    <div id="parent">
+        <p id="child1" class="child">This is Child 1</p>
+        <p id="child2" class="child">This is Child 2</p>
+        <p id="para2" class="child secondary">This is Child 3 (ID reused: para2)</p>
+        <p id="child4" class="child">This is Child 4</p>
+    </div>
+</body>
+</html>

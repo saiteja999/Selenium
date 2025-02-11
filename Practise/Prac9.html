@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Practice CSS Selectors</title>
+  <style>
+    .highlight { color: red; }
+    .submit { background-color: green; color: white; }
+  </style>
+</head>
+<body>
+  <!-- Header with ID and class -->
+  <div id="header" class="container">
+    <h1>Welcome to the Practice Page</h1>
+  </div>
+
+  <!-- Main content container -->
+  <div class="container main">
+    <!-- Paragraph with ID and class -->
+    <p id="intro" class="text">This is the introduction paragraph.</p>
+    <p class="text">This is another paragraph inside the container.</p>
+
+    <!-- Unordered list with items -->
+    <ul class="list">
+      <li>List item 1</li>
+      <li class="highlight">List item 2 (highlighted)</li>
+      <li>List item 3</li>
+    </ul>
+
+    <!-- Form elements -->
+    <input type="text" name="username" placeholder="Enter username"/>
+    <input type="password" name="password" placeholder="Enter password"/>
+    <!-- Adjacent sibling: button immediately following the password input -->
+    <button class="submit">Login</button>
+  </div>
+
+  <!-- Footer section -->
+  <div class="footer">
+    <p>Footer content goes here.</p>
+  </div>
+</body>
+</html>

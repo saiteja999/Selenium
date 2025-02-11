@@ -1,0 +1,11 @@
+https://www.linkedin.com/pulse/selenium-interview-questions-answers-zioueche-fatima-zohra-1ab0e/
+
+
+1. How can you ensure that the pesticide paradox is not included in your project?
+2. What is the difference between authorization and authentication?
+3. What do error codes 415 and 405 represent?
+4. How can you create, update, and delete a customer in Postman in one go?
+5. Given the string "Company," how would you reverse the first three letters while keeping the rest of the string unchanged?
+6. Given the array {0, 1, 0, 0, 1, 1, 0}, how would you move all the 0s to the beginning and all the 1s to the end?
+7. Can you explain your framework?
+8. How do you manage synchronization within your framework? What are the different types of synchronization, and can you explain them?
